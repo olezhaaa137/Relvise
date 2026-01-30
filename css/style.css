@@ -16,6 +16,10 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
+body{
+    background: #fafafa;
+}
+
 .wrapper{
     min-height: 100%;
     overflow: hidden;
@@ -119,6 +123,40 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
     }
 }
 
+/*---HEADER-BLOCK-----------------------------------------------------------------*/
+
+.header-block {
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+.header-block__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 143%;
+    color: #252b42;
+}
+@media(max-width: 992px){
+    .header-block__title{
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 767px){
+    .header-block__title{
+        font-size: 30px;
+    }
+}
+
+.header-block__title:not(:last-child){
+    margin: 0 0 10px 0;
+}
+
+.header-block__sub-title {
+    font-weight: 500;
+    line-height: 143%;
+    color: #737373;
+}
+
 /* ---PAGE---------------------------------------------------------------------- */
 
 .page{
@@ -129,6 +167,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 
 .page__services {
+    position: relative;
+    z-index: 2;
+    margin: -111px 0 0 0;
+}
+
+.page__advantages {
 }
 
 /* ---HEADER---------------------------------------------------------------------- */
@@ -158,6 +202,12 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 @media (max-width: 992px){
     .main-block__body {
         padding: 120px 0 191px 0;
+    }
+}
+
+@media (max-width: 479px){
+    .main-block__body {
+        padding: 110px 0 160px 0;
     }
 }
 
@@ -250,21 +300,64 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 }
 .services__container {
 }
-._container {
-}
+
 .services_body {
-    display: flex;
-    margin: 0 -15px;
+    
 }
+
+@media(min-width: 670px){
+    .services_body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+}
+@media(max-width:992px){
+    .services_body {
+        margin: 0 -15px -30px;
+    }
+}
+
 .services__column {
-    margin: 0 15px;
     flex: 0 1 33.3%;
 }
+
+@media(min-width: 670px){
+    .services__column {
+        padding: 0px 15px;
+    }
+    
+}
+
+
+
+@media (max-width: 992px){
+    .services__column {
+        flex: 0 1 50%;
+    }
+
+    .services__column:last-child {
+        flex: 1 1 100%;
+    }
+
+    .services__column{
+        margin: 0  0 30px 0;
+    }
+}
+
 .services__item {
     height: 100%;
     padding: 35px;
     box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
     background-color: #fff;
+}
+
+@media (max-width: 479px){
+    .services__item {
+       
+        padding: 25px;
+
+    }
 }
 
 .services__item_green{
@@ -298,5 +391,79 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 .item-service__text {
     font-weight: 500;
     line-height: 143%;
+    color: #737373;
+}
+
+/* -PAGE-ADVANTAGES--------------------------------------------*/
+
+
+.advantages {
+    padding: 80px 0;
+}
+@media (max-width: 992px) {
+    .advantages {
+        padding: 50px 0;
+    }
+}
+@media (max-width: 767px) {
+    .advantages {
+        padding: 30px 0;
+    }
+}
+
+
+.advantages__container {
+}
+
+.advantages__header {
+    margin: 0 0 50px 0;
+}
+
+.advantages__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -30px;
+}
+.advantages__column {
+    padding: 0 15px;
+    margin: 0 0 30px 0;
+    flex: 0 1 25%;
+    text-align: center;
+}
+@media(max-width: 1020px){
+    .advantages__column{
+        flex: 0 1 50%;
+    }
+}
+
+@media(max-width: 560px){
+    .advantages__column{
+        flex: 0 1 100%;
+    }
+}
+
+.advantages__item {
+    padding: 30px;
+    background: #fff;
+    font-weight: 700;
+}
+.advantages__item > *:not(:last-child){
+    margin: 0 0 10px 0;
+}
+
+.advantages__icon {
+    height: 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.advantages__value {
+    font-size: 40px;
+    line-height: 143%;
+    color: #252b42;
+}
+.advantages__text {
+    font-size: 16px;
+    line-height: 150%;
     color: #737373;
 }
