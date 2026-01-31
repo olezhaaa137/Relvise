@@ -181,6 +181,9 @@ body{
 .page__whoweare {
 }
 
+.page__clients {
+}
+
 /* ---HEADER---------------------------------------------------------------------- */
 
 .footer{
@@ -561,6 +564,7 @@ body{
 
 
 .whoweare {
+    background: #fff;
     padding: 100px 0 136px 0;
 }
 
@@ -688,4 +692,27 @@ body{
     .whoweare__video:not(:last-child){
         margin: 30px 0 0 0;
     }
+}
+
+
+.clients {
+    padding: 50px 0;
+}
+.clients__containter {
+}
+
+.clients__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.clients__item {
+    flex: 0 1 16.6667%;
+    padding: 8px 15px;
+    text-align: center;
+    min-width: 140px;
+}
+.clients__item img{
+    max-width: 100%;
 }
