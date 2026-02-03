@@ -191,6 +191,8 @@ body{
 .page__getintouch {
 }
 
+.page_contact {
+}
 /* ---HEADER---------------------------------------------------------------------- */
 
 .footer{
@@ -919,4 +921,64 @@ body{
 .item-getintouch_active .item-getintouch__button{
     border: 1px solid #fff;
     color: #fff;
+}
+
+/*--CONTACT----------------------------------------------------------------------------------*/
+
+
+.contact {
+    background-color: #fff;
+    padding: 42px 0;
+}
+.contact__container {
+}
+.contact__content {
+    padding: 0 0 20px 0;
+}
+
+@media (min-width: 767px){
+    .contact__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact__content {
+        padding: 0 20px 0 0;
+    }
+}
+
+
+.content__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+}
+.content__title:not(:last-child){
+    margin: 0 0 10px 0;
+}
+
+.contact__text {
+    font-weight: 500;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    color: #737373;
+}
+.contact__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: #ff7b47;
+    line-height: 200%;
+    min-height: 58px;
+    padding: 5px 40px;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.contact__button:hover{
+    color:#ff7b47;
+    border: 1px solid #ff7b47;
+    background: #fff;
 }
